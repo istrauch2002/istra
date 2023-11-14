@@ -1,0 +1,34 @@
+body
+    background-color: #000
+    color: #fff
+/*объявляю переменную для цвета текста*/
+$text-color:#f1f1f1
+/*размер*/    
+$size:20px
+
+.menu_link
+    text-decoration: none
+    font-size:16px
+    color: #ff0
+    &:hover
+         color:$text-color /*использую переменную*/
+.content_title
+    color: $text-color /*использую переменную*/
+    font-size:$size*2
+.content_text
+    color: $text-color /*использую переменную*/
+    font-size:$size
+
+
+=border-card
+    border:3px solid #ccc
+    border-radius:15px
+
+.card
+    background-color: #fff
+    +border-card
+    
+.card2
+    background-color: #0f0
+    +border-card
+  
